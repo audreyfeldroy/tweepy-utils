@@ -9,8 +9,8 @@ Installation
 First the Twitter developer setup:
 
 * Create a Twitter app at https://dev.twitter.com/apps.
-* Create an access token.
 * Grant your Twitter app read/write privileges.
+* Create an access token.
 
 Then (for now):
 
