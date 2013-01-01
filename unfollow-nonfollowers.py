@@ -6,15 +6,23 @@ import time
 import tweepy
 import sys
 
+from argparse import ArgumentParser
 from ConfigParser import SafeConfigParser
 
-parser = SafeConfigParser()
-parser.read('config.ini')
+argparser = ArgumentParser(description="Unfollow people who don't follow back.")
+argparser.add_argument('-c', action='store', dest='config', default='config')
+args = argparser.parse_args()
+print args
 
-consumer_key = parser.get('twitter_account', 'consumer_key')
-consumer_secret = parser.get('twitter_account', 'consumer_secret')
-access_token = parser.get('twitter_account', 'access_token')
-access_token_secret = parser.get('twitter_account', 'access_token_secret')
+config_file = "%s.ini" % args.config
+print config_file
+confparser = SafeConfigParser()
+confparser.read(str(config_file))
+
+consumer_key = confparser.get('twitter_account', 'consumer_key')
+consumer_secret = confparser.get('twitter_account', 'consumer_secret')
+access_token = confparser.get('twitter_account', 'access_token')
+access_token_secret = confparser.get('twitter_account', 'access_token_secret')
 
 auth = tweepy.auth.OAuthHandler(
         consumer_key=consumer_key,
@@ -27,7 +35,7 @@ auth.set_access_token(
 # but useful for your own more in-depth apps.
 
 
-api=tweepy.API(auth_handler=auth)
+api = tweepy.API(auth_handler=auth)
 
 print "Loading followers.."
 followers = []

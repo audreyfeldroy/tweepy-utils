@@ -37,6 +37,10 @@ Unfollow people who don't follow back:
 
     $ python unfollow-nonfollowers.py
 
+Unfollow people who don't follow back, using the settings from pcs.ini:
+
+    $ python unfollow-nonfollowers.py -c pcs
+
 Credits
 -------
 
