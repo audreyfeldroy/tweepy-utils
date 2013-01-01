@@ -6,15 +6,25 @@ A set of Python utility scripts for Twitter account management, using Tweepy.
 Installation
 ------------
 
-For now:
+First the Twitter developer setup:
+
+* Create a Twitter app at https://dev.twitter.com/apps.
+* Create an access token.
+* Grant your Twitter app read/write privileges.
+
+Then (for now):
 
     $ mkvirtualenv tweepy-utils
-    $ pip install tweepy
+    $ pip install -r requirements.txt
     $ git clone ...
     $ cd tweepy-utils
     $ cp config.ini.example config.ini
 
-Then open config.ini and add your Twitter username and API key/secret.
+Finally open config.ini and add:
+
+* Your Twitter username
+* API key/secret
+* Access token/secret
 
 Usage
 -----
