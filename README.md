@@ -1,10 +1,8 @@
-tweepy-utils
-============
+# tweepy-utils
 
 A set of Python utility scripts for Twitter account management, using Tweepy.
 
-Installation
-------------
+## Installation
 
 First the Twitter developer setup:
 
@@ -26,8 +24,7 @@ Finally open config.ini and add:
 * API key/secret
 * Access token/secret
 
-Usage
------
+# Usage
 
 List people who don't follow back:
 
@@ -41,7 +38,6 @@ Unfollow people who don't follow back, using the settings from pcs.ini:
 
     $ python unfollow-nonfollowers.py -c pcs
 
-Credits
--------
+# Credits
 
-* unfollow-nonfollowers.py is based on [Jamieson Becker's unfollow script](http://pastebin.com/CxUDMtMi)
+* list-nonfollowers.py and unfollow-nonfollowers.py are based on [Jamieson Becker's unfollow script](http://pastebin.com/CxUDMtMi)
