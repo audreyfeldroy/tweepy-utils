@@ -2,14 +2,11 @@ from argparse import ArgumentParser
 from ConfigParser import SafeConfigParser
 
 argparser = ArgumentParser(description="Unfollow people who don't follow back.")
-argparser.add_argument('-c', action='store', dest='config', default='config')
+argparser.add_argument('-c', action='store', dest='config_file', default='config.ini')
 args = argparser.parse_args()
-#print args
 
-config_file = "%s.ini" % args.config
-#print config_file
 confparser = SafeConfigParser()
-confparser.read(str(config_file))
+confparser.read(str(args.config_file))
 
 username = confparser.get('twitter_account', 'username')
 consumer_key = confparser.get('twitter_account', 'consumer_key')

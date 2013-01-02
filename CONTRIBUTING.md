@@ -13,8 +13,13 @@ Got an idea or suggestion? Open a pull request rather than filing an issue, if y
 
 Do the following:
 
-    $ mkvirtualenv tweepy-utils
     $ git clone git@github.com:your-github-username/tweepy-utils.git
     $ cd tweepy-utils
-    $ pip install -r requirements.txt
-    $ cp config.ini.example config.ini
+    $ cp config.ini.example audreyr.ini
+    $ mkvirtualenv tweepy-utils
+    (tweepy-utils) $ python setup.py develop
+
+Then run the scripts like this:
+
+    (tweepy-utils) $ python scripts/list-nonfollowers.py -c audreyr.ini
+    (tweepy-utils) $ python scripts/unfollow-nonfollowers.py -c audreyr.ini

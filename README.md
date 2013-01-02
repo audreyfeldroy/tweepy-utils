@@ -40,8 +40,8 @@ If you have multiple Twitter accounts, create a `your-twitter-username.ini` file
 
 Then use the -c argument to run a script with a particular .ini file:
 
-    $ list-nonfollowers.py -c your-twitter-username
-    $ unfollow-nonfollowers.py -c your-twitter-username
+    $ list-nonfollowers.py -c your-twitter-username.ini
+    $ unfollow-nonfollowers.py -c your-twitter-username.ini
 
 
 ## Credits
