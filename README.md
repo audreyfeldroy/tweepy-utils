@@ -1,6 +1,6 @@
 # tweepy-utils
 
-A set of Python utility scripts for Twitter account management, using Tweepy.
+A set of Python utility scripts for Twitter account management, using [Tweepy](https://github.com/tweepy/tweepy).
 
 ## Installation
 
