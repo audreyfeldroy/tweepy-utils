@@ -1,4 +1,9 @@
-# Contributing to tweepy-utils
+# Contributors
+
+* Audrey Roy - January 1, 2013
+* Daniel Greenfeld - January 1, 2013
+
+# How to Contribute
 
 ## Fork, Code, Send Pull Requests
 
