@@ -3,6 +3,10 @@
 * Audrey Roy - January 1, 2013
 * Daniel Greenfeld - January 1, 2013
 
+## Additional Credits
+
+* list-nonfollowers.py and unfollow-nonfollowers.py are based on [Jamieson Becker's unfollow script](http://pastebin.com/CxUDMtMi)
+
 # How to Contribute
 
 ## Fork, Code, Send Pull Requests

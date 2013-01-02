@@ -2,6 +2,8 @@
 
 A set of Python utility scripts for Twitter account management, using [Tweepy](https://github.com/tweepy/tweepy).
 
+Based on various Tweepy snippets found online. See CONTRIBUTING.md for the credits and details on how to contribute.
+
 ## Installation
 
 First the Twitter developer setup:
@@ -42,8 +44,3 @@ Then use the -c argument to run a script with a particular .ini file:
 
     $ list-nonfollowers.py -c your-twitter-username.ini
     $ unfollow-nonfollowers.py -c your-twitter-username.ini
-
-
-## Credits
-
-* list-nonfollowers.py and unfollow-nonfollowers.py are based on [Jamieson Becker's unfollow script](http://pastebin.com/CxUDMtMi)
