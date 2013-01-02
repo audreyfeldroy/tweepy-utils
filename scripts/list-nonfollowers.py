@@ -6,16 +6,7 @@ import time
 import tweepy
 import sys
 
-from ConfigParser import SafeConfigParser
-
-parser = SafeConfigParser()
-parser.read('config.ini')
-
-username = parser.get('twitter_account', 'username')
-consumer_key = parser.get('twitter_account', 'consumer_key')
-consumer_secret = parser.get('twitter_account', 'consumer_secret')
-access_token = parser.get('twitter_account', 'access_token')
-access_token_secret = parser.get('twitter_account', 'access_token_secret')
+from tweepy_utils import username, consumer_key, consumer_secret, access_token, access_token_secret
 
 auth = tweepy.auth.OAuthHandler(
         consumer_key=consumer_key,

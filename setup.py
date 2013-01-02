@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
     name='tweepy-utils',
@@ -8,9 +8,12 @@ setup(
     author_email='audreyr@cartwheelweb.com',
     url='https://github.com/audreyr/tweepy-utils/',
     license='MIT license',
+    include_package_data=True,
+    zip_safe=False,
     install_requires=[
-        'tweepy == 1.12',
+        'tweepy==1.12',
     ],
+    packages=find_packages(),
     scripts=[
         'scripts/list-nonfollowers.py',
         'scripts/unfollow-nonfollowers.py'
