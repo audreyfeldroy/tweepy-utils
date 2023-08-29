@@ -1,1 +1,1 @@
-tweepy==1.12
+tweepy==3.0
